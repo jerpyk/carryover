@@ -1,0 +1,25 @@
+  <section id="step1">
+    <div class="grid2">
+      <div class="card">
+        <h2>Get your ChatGPT export</h2>
+        <p class="lead">ChatGPT's official data export is the only way to get your full history out. It's free on every plan.</p>
+        <ol class="how">
+          <li>In ChatGPT, open <kbd>Settings</kbd> → <kbd>Data controls</kbd> → <kbd>Export data</kbd>, then confirm.</li>
+          <li>OpenAI emails you a download link, usually within minutes (sometimes up to a day). The link expires after about 24 hours.</li>
+          <li>Download the <kbd>.zip</kbd> and drop it here. No need to unzip it.</li>
+        </ol>
+        <div class="note"><b>Why not just sign in?</b> The ChatGPT/OpenAI API can't read your ChatGPT chat history; it only runs new requests. So the export file is the reliable route, and it means you never hand over a password or API key.</div>
+      </div>
+      <div class="card">
+        <h2>Load it</h2>
+        <p class="lead">Accepts the export <kbd>.zip</kbd>, or <kbd>conversations.json</kbd> / <kbd>chat.html</kbd> from inside it.</p>
+        <label class="drop" id="drop" tabindex="0">
+          <strong>Drop your ChatGPT export here</strong>
+          <span>or click to choose a file</span>
+          <input type="file" id="file" accept=".zip,.json,.html,.htm" multiple hidden>
+        </label>
+        <div class="status" id="loadStatus" role="status"></div>
+        <p style="margin:14px 0 0;font-size:14px;color:var(--muted)">Just looking? <button class="btn sm" id="sampleBtn">Try with sample data</button></p>
+      </div>
+    </div>
+  </section>

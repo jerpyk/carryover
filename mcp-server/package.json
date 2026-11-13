@@ -1,0 +1,14 @@
+{
+  "name": "chatgpt-archive-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that lets Claude search and read your imported ChatGPT history",
+  "type": "module",
+  "main": "server.js",
+  "bin": { "chatgpt-archive-mcp": "server.js" },
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.0.0"
+  }
+}
